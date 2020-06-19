@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 
 
 import App from './libs/App';
-import config from './config';
+import config from './dist/config';
 const router = promiseRouter();
 import cors from 'cors';
 

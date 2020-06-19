@@ -5,10 +5,10 @@ const GetAdmins = async (req, res) => {
     const orm = getConnection();
     const data = await orm.getRepository('Admin').find(
       {
-        // select: ['name', 'username'],
-        // where: {
-        //   username: "Amir"
-        // }
+        select: ['name', 'username'],
+        where: {
+          username: "Amir"
+        }
       }
     );
 
